@@ -2,25 +2,47 @@
   <head>
     <title>Naruto Uzumaki</title>
     <style>
+      .floatRight {
+        float:right;        
+      }
+      .floatLeft {
+        float:left;        
+      }
+      .main_image {
+        width: 350px; 
+        height: 350px; 
+        margin-top:85px; 
+        border: 2px solid black;
+      }
+      .divForImages {
+        width: 350px;
+        height: 420px;
+        display: inline-block;
+        margin: 10px;
+      }
+      .imageStyling {
+        width: 350px; 
+        height: 350px;
+        border: 2px solid black;
+      }
+      .clearing {
+        clear:both;
+      }
+      .imageTitles {
+        font-size: 20px;
+        text-align: center;
+      }
+      .paragraphUnderline {
+        text-decoration: underline;
+      }
       .paragraphs {
         font-size: 20px;
         text-align: justify;
       }
-      #main_image {
-        float:right; 
-        width: 400px; 
-        height: 350px; 
-        margin-top:85px; 
-        text-align:center; 
-        border: 2px solid black;
-      }
-      #clearing {
-        clear:both;
-      }
     </style>
   </head>
   <body>
-    <div style="width:1000; float:left">
+    <div style="width:1000px; display: inline-block;">
       <h1 style="text-align:center">Naruto's history</h1>
       <div class="paragraphs">
         <p>
@@ -63,9 +85,26 @@
         </p>
       </div>
     </div>
-    <div id="main_image">
-      <img src="/naruto.png" alt="Naruto Uzumaki" width="400" />
-      <h4>Naruto at age of 10</h4>
+    <div class="divForImages" style="display: inline-block; margin: 30px">
+      <img class="main_image" src="/html-affishaikh/naruto.png" alt="Naruto Uzumaki" width="400" />
+      <p class="imageTitles">Naruto at age of 10</p>
     </div>
+    <div>
+      <p class="clearing imageTitles paragraphUnderline" style="margin:30px">All Characters from Naruto</p>
+    </div>
+    <div style="text-align:center">
+    <div class="divForImages" >
+      <img class="imageStyling" src="/html-affishaikh/kakashi.png" alt="Kakashi Hatake">
+      <p class="imageTitles">Kakashi Hatake</p>
+    </div>
+    <div class="divForImages">
+      <img class="imageStyling" src="/html-affishaikh/sasuke.jpg" alt="Sasuke Uchiha">
+      <p class="imageTitles">Sasuke Uchiha</p>
+    </div>
+    <div class="divForImages">
+      <img class="imageStyling" src="/html-affishaikh/sakura.png" alt="Sakura Haruno">
+      <p class="imageTitles">Sakura Haruno</p>
+    </div>
+  </div>
   </body>
 </html>
